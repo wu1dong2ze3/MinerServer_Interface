@@ -204,7 +204,8 @@
 |返回字段|字段类型|说明 |
 |:-----  |:-------|:-----|
 |- hashrate      | -string |- 实时算力|
-|- duration      | -int |- 运行时长 |
+|- startTime      | -int |- 开始时间 |
+|- nowTime      | -int |- 结束时间 |
 |- rejectRate      | -float |- 拒绝率|
 |- temp      | -string |- 温度
 
@@ -217,9 +218,10 @@
   "data": {
     "summary": {
       "hashrate": "473.45 MH/s", //实时算力，带单位
-      "duration": 1341242434, //运行时常
+      "startTime": 23232131, //开始
       "rejectRate": 0.12, //拒绝率 百分比
       "temp": "58C"//温度，暂时统一成摄氏度
+      "nowTime":123123123 //当前
     }
   }
 }
