@@ -1311,8 +1311,8 @@ websocke 消息：CloseMessage ，内容 YYYY-mm-dd HH:MM:ss格式时间，即�
 |:-----  |:-------|:-----|
 |- time      | -string |- 运行时间|
 |- cpu      | -string |- cpu |
-|- ram      | -string  |- 固件版本|
-|- rom      | -string  |- 固件发布时间|
+|- ram      | -string  |- 内存占用|
+|- rom      | -string  |- 存储占用|
 
 ###### 接口示例
 
