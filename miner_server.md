@@ -1028,7 +1028,7 @@
 
 |参数|必选|类型|说明|
 |:-----  |:-------|:-----|:----- | 
-|-filename    |- 是  | - string   |- 上传文件标识 </br> 举例子：filename=@C:\Users\user\ota_2021_01_01.rar|
+|-fileName    |- 是  | - string   |- 上传文件标识 </br> 举例子：filename=@C:\Users\user\ota_2021_01_01.rar|
 |-md5   | - 否  | - string   |- md5校验码 |
 
 ###### 返回字段
