@@ -1181,6 +1181,7 @@ websocke 消息：CloseMessage ，内容 YYYY-mm-dd HH:MM:ss格式时间，即�
 
 |返回字段|字段类型|说明 |
 |:-----  |:-------|:-----|
+|- minerName      | -string |- 矿机名字|
 |- ip      | -string |- ip|
 |- mac      | -string |- 字符串 |
 |- version      | -string  |- 固件版本|
@@ -1193,6 +1194,7 @@ websocke 消息：CloseMessage ，内容 YYYY-mm-dd HH:MM:ss格式时间，即�
   "message": "成功",
   "data": {
     "titleBar": {
+      "minerName": "PoolinMiner1",
       "ip": "192.168.1.1",
       "mac": "C4:E5:E7:3F:E0:F4",
       "version": "a10s_20210108_053449"
