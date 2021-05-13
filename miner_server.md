@@ -962,7 +962,6 @@
 |:-----  |:-------|:-----|
 |- version      | -string |- 版本号|
 |- time      | -string |- 描述 |
-|- otaName      | -string |- 上次升级文件名称 |
 
 ###### 接口示例
 
@@ -974,7 +973,6 @@
     "ota": {
       "version": "ota-aa-bb-cc-1",
       "time": "2021.4.5 22:22",
-      "otaName": "/user/file/ota_01_01.rar"
     }
   }
 }
