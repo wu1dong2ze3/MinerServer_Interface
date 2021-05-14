@@ -872,7 +872,7 @@
 |- defFrequency      | -int |- 该矿机默认工作频率|
 |- defVoltage      | -float |- 该矿机默认电压 |
 |- freqLimitPct | -int |- 频率极限值百分比，例默认频率defFrequency=1000 ，frequencyLimit=20即，频率设置上限是 1000+1000*%20，下限是1000-1000*%20| 
-|- VoltageLimitPct      | -int |-电压极限值百分比 同上 |
+|- voltageLimitPct      | -int |-电压极限值百分比 同上 |
 
 
 ###### 接口示例
