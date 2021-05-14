@@ -1,6 +1,7 @@
 # 矿机控制服务接口
-# 当前版本版本1.0.8 2021-05-8
-
+# 当前版本版本1.0.9 2021-05-14
+#####1.0.9 2021-05-14
+修改了获取工作模式接口
 #####1.0.8 2021-05-8
 整理了错误码表，修改了硬件状态接口
 #####1.0.7 2021-05-7
@@ -866,8 +867,13 @@
 
 |返回字段|字段类型|说明 |
 |:-----  |:-------|:-----|
-|- frequency      | -int |- 工作频率|
-|- voltage      | -float |- 电压 |
+|- frequency      | -int |- 当前工作频率|
+|- voltage      | -float |- 当前电压 |
+|- defFrequency      | -int |- 该矿机默认工作频率|
+|- defVoltage      | -float |- 该矿机默认电压 |
+|- freqLimitPct | -int |- 频率极限值百分比，例默认频率defFrequency=1000 ，frequencyLimit=20即，频率设置上限是 1000+1000*%20，下限是1000-1000*%20| 
+|- VoltageLimitPct      | -int |-电压极限值百分比 同上 |
+
 
 ###### 接口示例
 
@@ -961,7 +967,7 @@
 |返回字段|字段类型|说明 |
 |:-----  |:-------|:-----|
 |- version      | -string |- 版本号|
-|- time      | -string |- 描述 |
+|- time      | -string |- 版本发布时间 |
 
 ###### 接口示例
 
@@ -1021,8 +1027,8 @@
   "message": "成功"
 }
 ```
-一个上传文件测试的例子 注意md5以参数方式直接传送，否则需要俩接口才能完成一次上传，太麻烦～。～
-curl -X POST  "http://192.168.101.238:9090/system/ota/upgrade?md5=8db90cd72ca63feec93c20aeeebc040f" -F "file=@/Users/wudz/test.zip" -H "Content-Type: multipart/form-data"
+一个上传文件测试的例子
+curl -X POST  "http://192.168.101.238:9090/system/ota/upgrade" -F "file=@/Users/wudz/test.zip" -H "Content-Type: multipart/form-data"
 
 ### 3.9 重启
 
